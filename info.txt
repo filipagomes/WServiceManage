@@ -1,0 +1,5 @@
+Web Service que permite inserir, apagar e listar clientes (todos, por nome ou nif).
+A base de dados foi criada por linha de comandos através dos comandos:
+  create database clients;
+  \c clients;
+  create table clientinfo (nif int primary key not null, name text not null, address text not null, phonenumber int not null, email text not null);
